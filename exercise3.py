@@ -16,7 +16,7 @@ def income_analysis(data):
 with open('dados.json', 'r') as file:
   income_data = json.load(file)
 
-min_value, max_value, days_above_avg = analyze_income(income_data)
+min_value, max_value, days_above_avg = income_analysis(income_data)
 
 print(f"Menor faturamento: R$ {min_value: .2f}")
 print(f"Maior faturamento: R$ {max_value: .2f}")
