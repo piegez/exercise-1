@@ -9,6 +9,6 @@ income = {
 total = sum(income.values())
 
 print("Representação por estado (%):")
-for estado, value in income.itens():
+for estado, value in income.items():
   percentage = (value / total) * 100
   print(f"{estado}: {percentage:.2f}%")
